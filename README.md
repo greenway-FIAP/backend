@@ -52,7 +52,7 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
   * PUT -> `api/sector/{id}`
   * DELETE -> `api/sector/{id}`
   * GET -> `api/sector`
-  * POST => `api/sector`
+  * POST -> `api/sector`
 - product-type-controller
   * GET ->  `api/product-type/{id}`
   * PUT -> `api/product-type/{id}`
