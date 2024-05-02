@@ -7,13 +7,15 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
 
 ## Integrantes
 
-- 99513 - Rodrigo Batista Freire - Quality Assurance
+- 99513 - Rodrigo Batista Freire - Back-end
 
 - 99562 - Kaique Santos de Andrade - Web e Mobile
 
-- 550841 - Lucas Araujo Oliveira Silva - Back-end e IA
+- 99466 - Marcelo Augusto de Mello Paixão - DevOps e IA
 
-- 99466 - Marcelo Augusto de Mello Paixão - DevOps
+- 97967 - Vinicius Oliveira de Almeida - Mastering Database
+
+- 98644 - Thiago Martins Bezerra - Quality Assurance
 
 ## Como rodar a aplicação?
 
