@@ -15,6 +15,7 @@ public record ProductDetailedDTO(
         ProductTypeDetailedDTO productType
 ) {
     public ProductDetailedDTO(Product product) {
-        this(product.getName(), product.getDescription(), product.getSalePrice(), product.getCostPrice(), product.getWeight(), product.getCreatedAt(), new ProductTypeDetailedDTO(product.getProductType()));
+        this(product.getName(), product.getDescription(), product.getSalePrice(), product.getCostPrice(), product.getWeight(), product.getCreatedAt(),
+                new ProductTypeDetailedDTO(product.getProductType()));
     }
 }

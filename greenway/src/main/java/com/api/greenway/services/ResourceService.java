@@ -22,6 +22,10 @@ public class ResourceService {
         this.resourceTypeService = resourceTypeService;
     }
 
+    public Resource find(Long id) {
+        return resourceRepository.findOneByFinishedAtIsNullAndIdResource(id);
+    }
+
     public Resource create(ResourceRegisterDTO resourceRegisterDTO) {
         Resource resource = new Resource(resourceRegisterDTO);
 
