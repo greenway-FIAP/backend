@@ -22,8 +22,12 @@ public record CompanyDetailedDTO(
         SectorDetailedDTO sector,
 
         List<ProcessDetailedDTO> processList
+
 ) {
     public CompanyDetailedDTO(Company company) {
-        this(company.getName(), company.getDescription(), company.getCurrentRevenue(), company.getSize(), company.getCnpj(), new SectorDetailedDTO(company.getSector()), company.getProcessList().stream().map(ProcessDetailedDTO::new).toList());
+        this(company.getName(), company.getDescription(), company.getCurrentRevenue(),
+                company.getSize(), company.getCnpj(),
+                new SectorDetailedDTO(company.getSector()),
+                company.getProcessList().stream().map(ProcessDetailedDTO::new).toList());
     }
 }

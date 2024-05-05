@@ -16,7 +16,10 @@ public record ResourceDetailedDTO(
 ) {
 
     public ResourceDetailedDTO(Resource resource) {
-        this(resource.getIdResource(), resource.getName(), resource.getCostPerUnity(), resource.getDescription(), resource.getUnitMeasurent(), resource.getAvailability(), resource.getCreatedAt(), new ResourceTypeDetailedDTO(resource.getResourceType()));
+        this(resource.getIdResource(), resource.getName(), resource.getCostPerUnity(),
+                resource.getDescription(), resource.getUnitMeasurent(),
+                resource.getAvailability(), resource.getCreatedAt(),
+                new ResourceTypeDetailedDTO(resource.getResourceType()));
     }
 
 }
