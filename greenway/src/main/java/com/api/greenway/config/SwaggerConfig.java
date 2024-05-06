@@ -17,8 +17,8 @@ public class SwaggerConfig {
                         .version("0.0.1")
                         .description("API do Greenway, uma inovadora plataforma SaaS projetada para auxiliar empresas na gestão de suas operações rumo à sustentabilidade")
                         .contact(new Contact()
-                                .email("lucasaraujo4188@gmail.com")
-                                .name("Lucas Araujo")
+                                .email("technosfiap@gmail.com")
+                                .name("GitHub Technos")
                                 .url("https://github.com/greenway-FIAP"))
                         .license(new License()));
     }
