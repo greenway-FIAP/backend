@@ -20,6 +20,10 @@ public class UserService {
         this.userTypeService = userTypeService;
     }
 
+    public User find(Long id) {
+        return userRepository.findOneByFinishedAtIsNullAndIdUser(id);
+    }
+
     public User create(UserRegisterDTO userRegisterDTO) {
         User user = new User(userRegisterDTO);
 
