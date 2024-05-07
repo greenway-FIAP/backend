@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public record ProductDetailedDTO(
+        Long idProduct,
         String name,
         String description,
         double salePrice,
@@ -15,7 +16,7 @@ public record ProductDetailedDTO(
         ProductTypeDetailedDTO productType
 ) {
     public ProductDetailedDTO(Product product) {
-        this(product.getName(), product.getDescription(), product.getSalePrice(), product.getCostPrice(), product.getWeight(), product.getCreatedAt(),
+        this(product.getIdProduct() ,product.getName(), product.getDescription(), product.getSalePrice(), product.getCostPrice(), product.getWeight(), product.getCreatedAt(),
                 new ProductTypeDetailedDTO(product.getProductType()));
     }
 }

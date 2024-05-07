@@ -6,10 +6,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public record ResourceTypeDetailedDTO(
+        Long idResourceType,
+
         String name,
         String description
 ) {
     public ResourceTypeDetailedDTO(ResourceType resourceType) {
-        this(resourceType.getName(), resourceType.getDescription());
+        this(resourceType.getIdResourceType() ,resourceType.getName(), resourceType.getDescription());
     }
 }

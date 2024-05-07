@@ -9,6 +9,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public record ProcessDetailedDTO(
+
+        Long idProcess,
         String name,
 
         String description,
@@ -26,7 +28,7 @@ public record ProcessDetailedDTO(
         List<ProductDetailedDTO> productList
 ) {
     public ProcessDetailedDTO(Process process) {
-        this(process.getName(), process.getDescription(), process.getStatusProcess(), process.getPriority(),
+        this(process.getIdProcess() ,process.getName(), process.getDescription(), process.getStatusProcess(), process.getPriority(),
                 process.getDateStart(), process.getDateEnd(), process.getComments(), process.getProductList().stream().map(ProductDetailedDTO::new).toList());
     }
 }

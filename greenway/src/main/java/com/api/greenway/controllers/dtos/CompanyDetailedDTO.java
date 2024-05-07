@@ -8,6 +8,8 @@ import org.hibernate.validator.constraints.br.CNPJ;
 import java.util.List;
 
 public record CompanyDetailedDTO(
+
+        Long idCompany,
         @NotBlank
         String name,
 
@@ -25,7 +27,7 @@ public record CompanyDetailedDTO(
 
 ) {
     public CompanyDetailedDTO(Company company) {
-        this(company.getName(), company.getDescription(), company.getCurrentRevenue(),
+        this(company.getIdCompany() ,company.getName(), company.getDescription(), company.getCurrentRevenue(),
                 company.getSize(), company.getCnpj(),
                 new SectorDetailedDTO(company.getSector()),
                 company.getProcessList().stream().map(ProcessDetailedDTO::new).toList());
