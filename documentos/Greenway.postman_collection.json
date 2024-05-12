@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "cc515451-5d46-40ac-b3a5-944a1366f1a9",
+		"_postman_id": "1fd21b12-8065-4cff-b066-bbdbb7f331f1",
 		"name": "Greenway",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "21065753"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23459166"
 	},
 	"item": [
 		{
@@ -14,19 +14,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/sector/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"sector",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/sector/2"
 					},
 					"response": []
 				},
@@ -44,18 +32,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/sector",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"sector"
-							]
-						}
+						"url": "http://localhost:8080/api/sector"
 					},
 					"response": []
 				},
@@ -64,18 +41,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/sector",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"sector"
-							]
-						}
+						"url": "http://localhost:8080/api/sector"
 					},
 					"response": []
 				},
@@ -84,19 +50,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/sector/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"sector",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/sector/2"
 					},
 					"response": []
 				},
@@ -114,19 +68,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/sector/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"sector",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/sector/2"
 					},
 					"response": []
 				}
@@ -142,25 +84,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Empresa 3\",\r\n  \"description\": \"Uma empresa muito boa\",\r\n  \"currentRevenue\": 98496,\r\n  \"size\": 45,\r\n  \"cnpj\": \"38.780.609/0001-01\",\r\n  \"idSector\": 1\r\n}",
+							"raw": "{\r\n  \"name\": \"Empresa 2\",\r\n  \"description\": \"Uma empresa muito boa\",\r\n  \"currentRevenue\": 98496,\r\n  \"size\": 45,\r\n  \"cnpj\": \"38.780.609/0001-01\",\r\n  \"idSector\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/company",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company"
-							]
-						}
+						"url": "http://localhost:8080/api/company"
 					},
 					"response": []
 				},
@@ -169,19 +100,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/company/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/company/2"
 					},
 					"response": []
 				},
@@ -190,18 +109,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/company",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company"
-							]
-						}
+						"url": "http://localhost:8080/api/company"
 					},
 					"response": []
 				},
@@ -210,19 +118,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/company/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/company/2"
 					},
 					"response": []
 				},
@@ -240,19 +136,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/company/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/company/2"
 					},
 					"response": []
 				}
@@ -275,18 +159,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/product-type",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product-type"
-							]
-						}
+						"url": "http://localhost:8080/api/product-type"
 					},
 					"response": []
 				},
@@ -295,18 +168,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/product-type",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product-type"
-							]
-						}
+						"url": "http://localhost:8080/api/product-type"
 					},
 					"response": []
 				},
@@ -315,19 +177,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/product-type/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product-type",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/product-type/2"
 					},
 					"response": []
 				},
@@ -338,26 +188,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Roupa\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Roupa\",\r\n    \"description\": \"Modelos confortáveis\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/product-type/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product-type",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/product-type/2"
 					},
 					"response": []
 				},
@@ -366,145 +204,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/product-type/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product-type",
-								"1"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Product",
-			"item": [
-				{
-					"name": "Create",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Playstation 5\",\r\n  \"description\": \"Console da Sony\",\r\n  \"salePrice\": 6000,\r\n  \"costPrice\": 2000,\r\n  \"weight\": 100,\r\n  \"idProductType\": 1,\r\n  \"idProcess\": 1\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/product",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get By Id",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/product/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Find All",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/product",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Iphone 7\",\r\n  \"description\": \"Celular Antigo\",\r\n  \"salePrice\": 1000,\r\n  \"costPrice\": 500,\r\n  \"weight\": 30\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/product/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/product/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"product",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/product-type/2"
 					},
 					"response": []
 				}
@@ -527,18 +227,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/process",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"process"
-							]
-						}
+						"url": "http://localhost:8080/api/process"
 					},
 					"response": []
 				},
@@ -547,19 +236,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/process/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"process",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/process/2"
 					},
 					"response": []
 				},
@@ -568,18 +245,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/process",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"process"
-							]
-						}
+						"url": "http://localhost:8080/api/process"
 					},
 					"response": []
 				},
@@ -597,19 +263,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/process/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"process",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/process/2"
 					},
 					"response": []
 				},
@@ -618,19 +272,75 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/process/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"process",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/process/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Playstation 5\",\r\n  \"description\": \"Console da Sony\",\r\n  \"salePrice\": 6000,\r\n  \"costPrice\": 2000,\r\n  \"weight\": 100,\r\n  \"idProductType\": 1,\r\n  \"idProcess\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/product/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Iphone 7\",\r\n  \"description\": \"Celular Antigo\",\r\n  \"salePrice\": 1000,\r\n  \"costPrice\": 500,\r\n  \"weight\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/product/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/product/2"
 					},
 					"response": []
 				}
@@ -646,25 +356,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Teste1\",\r\n  \"description\": \"Teste insert\"\r\n}",
+							"raw": "{\r\n  \"name\": \"energia oriunda do Sol\",\r\n  \"description\": \"Energia fornecida pelo raios solares\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/resource-type",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource-type"
-							]
-						}
+						"url": "http://localhost:8080/api/resource-type"
 					},
 					"response": []
 				},
@@ -673,18 +372,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/resource-type",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource-type"
-							]
-						}
+						"url": "http://localhost:8080/api/resource-type"
 					},
 					"response": []
 				},
@@ -693,19 +381,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/resource-type/3",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource-type",
-								"3"
-							]
-						}
+						"url": "http://localhost:8080/api/resource-type/2"
 					},
 					"response": []
 				},
@@ -716,26 +392,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Delete\",\r\n  \"description\": \"Teste update\"\r\n}",
+							"raw": "{\r\n  \"name\": \"BIOENGENHARIA\",\r\n  \"description\": \"Trata-se de uma ciência que investiga o movimento sob os aspectos mecânicos, suas causas e efeitos nos organismos vivos. É uma área que tem forte ligação com a Saúde.\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/resource-type/3",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource-type",
-								"3"
-							]
-						}
+						"url": "http://localhost:8080/api/resource-type/2"
 					},
 					"response": []
 				},
@@ -744,19 +408,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/resource-type/3",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource-type",
-								"3"
-							]
-						}
+						"url": "http://localhost:8080/api/resource-type/3"
 					},
 					"response": []
 				}
@@ -772,25 +424,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Teste Resource 2\",\r\n  \"costPerUnity\": 10,\r\n  \"description\": \"Testando Insert Resource\",\r\n  \"unitMeasurent\": \"Teste\",\r\n  \"availability\": 100,\r\n  \"idResourceType\": 1\r\n}",
+							"raw": "{\r\n  \"name\": \"Luz noturna com carregamento solar\",\r\n  \"costPerUnity\": 10,\r\n  \"description\": \"Luz que acente no periodo noturno que carrega durante o dia com a luz solar\",\r\n  \"unitMeasurent\": \"voltz\",\r\n  \"availability\": 100,\r\n  \"idResourceType\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/resource",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource"
-							]
-						}
+						"url": "http://localhost:8080/api/resource"
 					},
 					"response": []
 				},
@@ -799,18 +440,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/resource",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource"
-							]
-						}
+						"url": "http://localhost:8080/api/resource"
 					},
 					"response": []
 				},
@@ -819,19 +449,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/resource/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/resource/2"
 					},
 					"response": []
 				},
@@ -842,26 +460,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Teste Update\",\r\n  \"costPerUnity\": 10,\r\n  \"description\": \"Testando Insert Resource\",\r\n  \"unitMeasurent\": \"Teste\",\r\n  \"availability\": 100,\r\n  \"idResourceType\": 1\r\n}",
+							"raw": "{\r\n  \"name\": \"Engenharia de tecidos\",\r\n  \"costPerUnity\": 10,\r\n  \"description\": \"Um bioengenheiro também é capaz de atuar na área de Engenharia de Tecidos. Essa engenharia é responsável pelo desenvolvimento de tecidos artificiais (no sentido biológico), como a reconstrução de pele, cartilagens e até do tecido ósseo.\",\r\n  \"unitMeasurent\": \"CM\",\r\n  \"availability\": 100,\r\n  \"idResourceType\": 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/resource/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/resource/2"
 					},
 					"response": []
 				},
@@ -870,19 +476,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/resource/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"resource",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/resource/3"
 					},
 					"response": []
 				}
@@ -905,18 +499,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/processResource",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"processResource"
-							]
-						}
+						"url": "http://localhost:8080/api/processResource"
 					},
 					"response": []
 				},
@@ -925,18 +508,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/processResource",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"processResource"
-							]
-						}
+						"url": "http://localhost:8080/api/processResource"
 					},
 					"response": []
 				},
@@ -945,19 +517,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/processResource/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"processResource",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/processResource/2"
 					},
 					"response": []
 				},
@@ -966,19 +526,16 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/processResource/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"processResource",
-								"2"
-							]
-						}
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idResource\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/processResource/2"
 					},
 					"response": []
 				},
@@ -987,19 +544,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/processResource/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"processResource",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/processResource/2"
 					},
 					"response": []
 				}
@@ -1013,18 +558,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/address",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"address"
-							]
-						}
+						"url": "http://localhost:8080/api/address"
 					},
 					"response": []
 				},
@@ -1033,19 +567,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/address/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"address",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/address/2"
 					},
 					"response": []
 				},
@@ -1056,25 +578,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"street\" : \"teste Insert2\",\r\n    \"zipCode\" : \"12345678\",\r\n    \"number\": \"123\",\r\n    \"uf\": \"SP\",\r\n    \"neighborhood\" : \"Testando Insert\",\r\n    \"city\" : \"Jandira\",\r\n    \"idCompany\" : 1\r\n}",
+							"raw": "{\r\n    \"street\" : \"Rua Lapis-Lazuli\",\r\n    \"zipCode\" : \"02.276-130\",\r\n    \"number\": \"123\",\r\n    \"uf\": \"SP\",\r\n    \"neighborhood\" : \"Guapira\",\r\n    \"city\" : \"São Paulo\",\r\n    \"idCompany\" : 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/address",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"address"
-							]
-						}
+						"url": "http://localhost:8080/api/address"
 					},
 					"response": []
 				},
@@ -1085,26 +596,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"street\" : \"teste Update\"\r\n}",
+							"raw": "{\r\n    \"street\" : \"Rua das Glicinias\",\r\n    \"zipCode\" : \"06355-430\",\r\n    \"number\": \"234\",\r\n    \"uf\": \"SP\",\r\n    \"neighborhood\" : \"Chacara Vale do Rio Cotia \",\r\n    \"city\" : \"Carapicuiba\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/address/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"address",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/address/2"
 					},
 					"response": []
 				},
@@ -1113,19 +612,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/address/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"address",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/address/2"
 					},
 					"response": []
 				}
@@ -1139,18 +626,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/user-type",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user-type"
-							]
-						}
+						"url": "http://localhost:8080/api/user-type"
 					},
 					"response": []
 				},
@@ -1161,25 +637,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Teste Insert2 \"\r\n}",
+							"raw": "{\r\n    \"title\": \"Administrador\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/user-type",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user-type"
-							]
-						}
+						"url": "http://localhost:8080/api/user-type"
 					},
 					"response": []
 				},
@@ -1190,26 +655,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Teste Update\"\r\n}",
+							"raw": "{\r\n    \"title\": \"Empresa\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/user-type/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user-type",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/user-type/2"
 					},
 					"response": []
 				},
@@ -1218,19 +671,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/user-type/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user-type",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/user-type/2"
 					},
 					"response": []
 				},
@@ -1239,19 +680,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/user-type/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user-type",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/user-type/3"
 					},
 					"response": []
 				}
@@ -1267,25 +696,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"testeInsert2@gmail.com\",\r\n    \"password\": \"dsgadjgjsaf65d76f57sd5f\",\r\n    \"idUserType\" : 1\r\n}",
+							"raw": "{\r\n    \"email\": \"usuarioAdministradorPlataforma@gmail.com\",\r\n    \"password\": \"747543uhgfgvdf8dfs69dfsdfsdf\",\r\n    \"idUserType\" : 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/user",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user"
-							]
-						}
+						"url": "http://localhost:8080/api/user"
 					},
 					"response": []
 				},
@@ -1294,18 +712,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/user",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user"
-							]
-						}
+						"url": "http://localhost:8080/api/user"
 					},
 					"response": []
 				},
@@ -1314,19 +721,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/user/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/user/2"
 					},
 					"response": []
 				},
@@ -1337,26 +732,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"Update@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"email\": \"rogerioAlmeida@gmail.com\",\r\n    \"password\": \"8654hbhgfdjdsf7sd97f9sdfshnkf\",\r\n    \"idUserType\" : 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/user/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/user/2"
 					},
 					"response": []
 				},
@@ -1365,19 +748,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/user/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"user",
-								"1"
-							]
-						}
+						"url": "http://localhost:8080/api/user/3"
 					},
 					"response": []
 				}
@@ -1393,25 +764,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"phone\": \"12345678910\",\r\n    \"role\": \"Teste insert2\",\r\n    \"name\": \"Testando Insert2\",\r\n    \"idUser\": 1,\r\n    \"idCompany\": 1\r\n}",
+							"raw": "{\r\n    \"phone\": \"4683768438584\",\r\n    \"role\": \"Ceo Empresa 1\",\r\n    \"name\": \"Rogério\",\r\n    \"idUser\": 2,\r\n    \"idCompany\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/company-representative",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company-representative"
-							]
-						}
+						"url": "http://localhost:8080/api/company-representative"
 					},
 					"response": []
 				},
@@ -1432,18 +792,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/company-representative",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company-representative"
-							]
-						}
+						"url": "http://localhost:8080/api/company-representative"
 					},
 					"response": []
 				},
@@ -1452,19 +801,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/company-representative/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company-representative",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/company-representative/2"
 					},
 					"response": []
 				},
@@ -1475,26 +812,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"role\": \"Teste Update\",\r\n    \"name\": \"Testando Update\"\r\n}",
+							"raw": "{\r\n    \"phone\": \"6754734454\",\r\n    \"role\": \"Administrativo\",\r\n    \"name\": \"Carlos\",\r\n    \"idUser\": 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "http://localhost:8080/api/company-representative/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company-representative",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/company-representative/2"
 					},
 					"response": []
 				},
@@ -1503,19 +828,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/company-representative/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"company-representative",
-								"2"
-							]
-						}
+						"url": "http://localhost:8080/api/company-representative/3"
 					},
 					"response": []
 				}
