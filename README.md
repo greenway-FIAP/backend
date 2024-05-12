@@ -33,15 +33,20 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
 ## Diagramas
 
 - ### Diagrama de classe
-  <img src="https://github.com/greenway-FIAP/backend/blob/main/diagramas/greenway_diagrama_classes.jpg">
+![greenway_diagrama_classes (1)](https://github.com/greenway-FIAP/backend/assets/89154929/be1eb7f7-bbbb-47e2-9145-1b865ccdab93)
+
 
 - ### Diagrama de entidade e relacionamento
-  <img src="https://github.com/greenway-FIAP/backend/blob/main/diagramas/greenway_modelagem_banco.jpg">
+![Bd](https://github.com/greenway-FIAP/backend/assets/89154929/4f77882c-d73d-4519-9a5e-ce618520add3)
+
 
 - ### Diagrama de arquitetura
-  <img src="https://github.com/greenway-FIAP/backend/blob/main/diagramas/greenway_arquitetura.jpg">
+![greenway_arquitetura](https://github.com/greenway-FIAP/backend/assets/89154929/42558ab9-e76d-41b6-b131-5caff565c009)
 
-## Endpoints
+
+### Endpoints
+
+## Sprint 1
 
 - product-controller
   * GET -> `api/product/{id}`
@@ -73,3 +78,50 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
   * DELETE -> `api/company/{id}`
   * GET -> `api/company`
   * POST -> `api/company`
+
+ ## Sprint 2
+ 
+- resource-type-controller
+  * GET ->  `api/resource-type/{id}`
+  * PUT -> `api/resource-type/{id}`
+  * DELETE -> `api/resource-type/{id}`
+  * GET -> `api/resource-type`
+  * POST -> `api/resource-type`
+- resource-controller
+  * GET -> `api/resource/{id}`
+  * PUT -> `api/resource/{id}`
+  * DELETE -> `api/resource/{id}`
+  * GET -> `api/resource`
+  * POST -> `api/resource`
+- process-resource-controller
+  * GET -> `api/processResource/{id}`
+  * PUT -> `api/processResource/{id}`
+  * DELETE -> `api/processResource/{id}`
+  * GET -> `api/processResource`
+  * POST -> `api/processResource`
+- address-controller
+  * GET -> `api/address/{id}`
+  * PUT -> `api/address/{id}`
+  * DELETE -> `api/address/{id}`
+  * GET -> `api/address`
+  * POST -> `api/address`
+- user-type-controller
+  * GET ->  `api/user-type/{id}`
+  * PUT -> `api/user-type/{id}`
+  * DELETE -> `api/user-type/{id}`
+  * GET -> `api/user-type`
+  * POST -> `api/user-type`
+- user-controller
+  * GET -> `api/user/{id}`
+  * PUT -> `api/user/{id}`
+  * DELETE -> `api/user/{id}`
+  * GET -> `api/user`
+  * POST -> `api/user`
+- company-representative-controller
+  * GET -> `api/companyRepresentative/{id}`
+  * PUT -> `api/companyRepresentative/{id}`
+  * DELETE -> `api/companyRepresentative/{id}`
+  * GET -> `api/companyRepresentative`
+  * POST -> `api/companyRepresentative`
+
+ 
