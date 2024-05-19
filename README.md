@@ -1,11 +1,13 @@
-# Greenway
+![Greenway_Text](https://github.com/greenway-FIAP/backend/assets/80494196/8a781b86-00a3-4bfd-a242-3faa35f00e57)
 
-## Sobre a solução
+### Sobre a solução
 O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na gestão de suas operações rumo à sustentabilidade. Ao oferecer um acompanhamento minucioso dos processos de produção, nosso objetivo é fomentar o desenvolvimento sustentável, ao mesmo tempo em que impulsionamos benefícios econômicos para as organizações. Nossa plataforma, equipada com uma IA Generativa de ponta, tem a capacidade de analisar os dados gerados pelas empresas e fornecer insights valiosos. Através de sugestões personalizadas, promovemos modificações e boas práticas que contribuem para o alcance de metas sustentáveis. Além disso, monitoramos continuamente o progresso das empresas através da IA, garantindo que estejam no caminho certo para a sustentabilidade. Um dos diferenciais do Greenway é a certificação por meio de badges gerados automaticamente pela plataforma, que atestam o comprometimento das empresas com a redução dos impactos no meio ambiente. Essa validação não apenas reforça a reputação das empresas no mercado, mas também fortalece o relacionamento com os consumidores finais. Ao criar novos canais de comunicação e aumentar a transparência, lealdade, preferência e confiança também são cultivadas junto ao público-alvo.
 
 [Link da apresentação](https://youtu.be/WJ93nQ6kmbc)
 
-## Integrantes
+##
+
+### Integrantes
 
 - 99513 - Rodrigo Batista Freire - Back-end
 
@@ -17,7 +19,9 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
 
 - 98644 - Thiago Martins Bezerra - Quality Assurance
 
-## Como rodar a aplicação?
+##
+
+### Como rodar a aplicação?
 
 1. **Abrir o Projeto**: Abra o IntelliJ IDEA e importe o projeto Java que contém a aplicação. Se você já tem o projeto aberto, pule para o próximo passo.
 
@@ -29,8 +33,9 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
 
 6. **Documentação**: Para acessar todos os endpoints da aplicação, acesse o link http://localhost:8080/swagger-ui/index.html
 
+##
 
-## Diagramas
+### Diagramas
 
 - ### Diagrama de classe
 ![greenway_diagrama_classes (1)](https://github.com/greenway-FIAP/backend/assets/89154929/be1eb7f7-bbbb-47e2-9145-1b865ccdab93)
@@ -43,10 +48,9 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
 - ### Diagrama de arquitetura
 ![greenway_arquitetura](https://github.com/greenway-FIAP/backend/assets/89154929/42558ab9-e76d-41b6-b131-5caff565c009)
 
+##
 
-### Endpoints
-
-## Sprint 1
+### Sprint 1 - Endpoints
 
 - product-controller
   * GET -> `api/product/{id}`
@@ -54,24 +58,28 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
   * DELETE -> `api/product/{id}`
   * GET -> `api/product`
   * POST -> `api/product`
+ 
 - sector-controller
   * GET -> `api/sector/{id}`
   * PUT -> `api/sector/{id}`
   * DELETE -> `api/sector/{id}`
   * GET -> `api/sector`
   * POST -> `api/sector`
+
 - product-type-controller
   * GET ->  `api/product-type/{id}`
   * PUT -> `api/product-type/{id}`
   * DELETE -> `api/product-type/{id}`
   * GET -> `api/product-type`
   * POST -> `api/product-type`
+
 - process-controller
   * GET -> `api/process/{id}`
   * PUT -> `api/process/{id}`
   * DELETE -> `api/process/{id}`
   * GET -> `api/process`
   * POST -> `api/process`
+
 - company-controller
   * GET -> `api/company/{id}`
   * PUT -> `api/company/{id}`
@@ -79,7 +87,9 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
   * GET -> `api/company`
   * POST -> `api/company`
 
- ## Sprint 2
+##
+
+ ### Sprint 2 - Endpoints
  
 - resource-type-controller
   * GET ->  `api/resource-type/{id}`
@@ -87,36 +97,42 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
   * DELETE -> `api/resource-type/{id}`
   * GET -> `api/resource-type`
   * POST -> `api/resource-type`
+
 - resource-controller
   * GET -> `api/resource/{id}`
   * PUT -> `api/resource/{id}`
   * DELETE -> `api/resource/{id}`
   * GET -> `api/resource`
   * POST -> `api/resource`
+
 - process-resource-controller
   * GET -> `api/processResource/{id}`
   * PUT -> `api/processResource/{id}`
   * DELETE -> `api/processResource/{id}`
   * GET -> `api/processResource`
   * POST -> `api/processResource`
+
 - address-controller
   * GET -> `api/address/{id}`
   * PUT -> `api/address/{id}`
   * DELETE -> `api/address/{id}`
   * GET -> `api/address`
   * POST -> `api/address`
+
 - user-type-controller
   * GET ->  `api/user-type/{id}`
   * PUT -> `api/user-type/{id}`
   * DELETE -> `api/user-type/{id}`
   * GET -> `api/user-type`
   * POST -> `api/user-type`
+
 - user-controller
   * GET -> `api/user/{id}`
   * PUT -> `api/user/{id}`
   * DELETE -> `api/user/{id}`
   * GET -> `api/user`
   * POST -> `api/user`
+
 - company-representative-controller
   * GET -> `api/companyRepresentative/{id}`
   * PUT -> `api/companyRepresentative/{id}`
