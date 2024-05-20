@@ -46,7 +46,8 @@ O Greenway é uma inovadora plataforma SaaS projetada para auxiliar empresas na 
 
 
 - ### Diagrama de arquitetura
-![greenway_arquitetura](https://github.com/greenway-FIAP/backend/assets/80494196/33b6ad8f-af28-410d-9f3c-02304d3406ec)
+![greenway_arquitetura_sprint2](https://github.com/greenway-FIAP/backend/assets/80494196/cbd34e2f-afaf-4a06-a8c0-15e0d7286e5d)
+
 
 
 ##
