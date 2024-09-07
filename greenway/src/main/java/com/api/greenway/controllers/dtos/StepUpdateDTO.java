@@ -9,6 +9,8 @@ public record StepUpdateDTO(
 
         String description,
 
+        int estimatedTime,
+
         StatusProcess statusStep,
 
         LocalDateTime dateStart,

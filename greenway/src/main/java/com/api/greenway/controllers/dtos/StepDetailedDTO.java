@@ -13,6 +13,8 @@ public record StepDetailedDTO(
 
         String description,
 
+        int estimatedTime,
+
         StatusProcess statusStep,
 
         LocalDateTime dateStart,
@@ -22,7 +24,7 @@ public record StepDetailedDTO(
 ) {
 
     public StepDetailedDTO(Step step) {
-        this(step.getIdStep() ,step.getName(), step.getDescription(), step.getStatusStep(),
+        this(step.getIdStep() ,step.getName(), step.getDescription(), step.getEstimatedTime(), step.getStatusStep(),
                 step.getDateStart(), step.getDateEnd());
     }
 

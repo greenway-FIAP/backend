@@ -14,6 +14,9 @@ public record StepRegisterDTO(
         String description,
 
         @NotNull
+        int estimatedTime,
+
+        @NotNull
         StatusProcess statusStep,
 
         @NotNull

@@ -29,6 +29,9 @@ public class Step {
     @Column(name = "tx_description")
     private String description;
 
+    @Column(name = "nr_estimated_time")
+    private int estimatedTime;
+
     @Column(name = "st_step")
     private StatusProcess statusStep;
 
@@ -49,6 +52,7 @@ public class Step {
 
     public Step(StepRegisterDTO stepRegisterDTO) {
         this.name = stepRegisterDTO.name();
+        this.estimatedTime = stepRegisterDTO.estimatedTime();
         this.description = stepRegisterDTO.description();
         this.statusStep = stepRegisterDTO.statusStep();
         this.dateEnd =  stepRegisterDTO.dateEnd();
@@ -63,6 +67,10 @@ public class Step {
     public void updateInformation(StepUpdateDTO stepUpdateDTO) {
         if (stepUpdateDTO.name() != null) {
             this.name = stepUpdateDTO.name();
+        }
+
+        if (stepUpdateDTO.estimatedTime() != 0) {
+            this.estimatedTime = stepUpdateDTO.estimatedTime();
         }
 
         if (stepUpdateDTO.description() != null) {
