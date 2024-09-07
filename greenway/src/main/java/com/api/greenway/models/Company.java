@@ -17,10 +17,11 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "T_GRW_COMPANY")
+@SequenceGenerator(name = "SEQ_GRW_COMPANY", sequenceName = "SEQ_GRW_COMPANY", allocationSize = 1)
 public class Company {
     @Column(name = "id_company")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_COMPANY")
     private Long idCompany;
 
     @Column(name = "ds_name")

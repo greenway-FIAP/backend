@@ -16,11 +16,12 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name = "T_GRW_PROCESS_RESOURCE")
+@SequenceGenerator(name = "SEQ_GRW_PROCESS_RESOURCE", sequenceName = "SEQ_GRW_PROCESS_RESOURCE", allocationSize = 1)
 public class ProcessResource {
 
     @Column(name = "id_process_resource")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_PROCESS_RESOURCE")
     private Long idProcessResource;
 
     @Column(name = "dt_created_at")

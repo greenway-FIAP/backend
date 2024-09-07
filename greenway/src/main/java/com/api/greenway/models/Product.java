@@ -16,15 +16,16 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name = "T_GRW_PRODUCT")
+@SequenceGenerator(name = "SEQ_GRW_PRODUCT", sequenceName = "SEQ_GRW_PRODUCT", allocationSize = 1)
 public class Product {
     @Column(name = "id_product")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_PRODUCT")
     private Long idProduct;
 
     @Column(name = "ds_name")
     private String name;
-
+    
     @Column(name = "tx_description")
     private String description;
 

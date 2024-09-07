@@ -18,11 +18,12 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name = "T_GRW_RESOURCE_TYPE")
+@SequenceGenerator(name = "SEQ_GRW_RESOURCE_TYPE", sequenceName = "SEQ_GRW_RESOURCE_TYPE", allocationSize = 1)
 public class ResourceType {
 
     @Column(name = "id_resource_type")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_RESOURCE_TYPE")
     private Long idResourceType;
 
     @Column(name = "ds_name")

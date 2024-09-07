@@ -18,9 +18,10 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "T_GRW_PRODUCT_TYPE")
+@SequenceGenerator(name = "SEQ_GRW_PRODUCT_TYPE", sequenceName = "SEQ_GRW_PRODUCT_TYPE", allocationSize = 1)
 public class ProductType {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_PRODUCT_TYPE")
     @Column(name = "id_product_type")
     private Long idProductType;
 

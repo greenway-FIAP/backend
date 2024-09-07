@@ -18,11 +18,12 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name = "T_GRW_ADDRESS")
+@SequenceGenerator(name = "SEQ_GRW_ADDRESS", sequenceName = "SEQ_GRW_ADDRESS", allocationSize = 1)
 public class Address {
 
     @Column(name = "id_address")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_ADDRESS")
     private Long idAddress;
 
     @Column(name = "ds_street")

@@ -17,10 +17,11 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name = "T_GRW_STEP")
+@SequenceGenerator(name = "SEQ_GRW_STEP", sequenceName = "SEQ_GRW_STEP", allocationSize = 1)
 public class Step {
     @Column(name = "id_step")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_STEP")
     private Long idStep;
 
     @Column(name = "ds_name")

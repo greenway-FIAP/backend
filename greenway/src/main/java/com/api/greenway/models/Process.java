@@ -18,10 +18,11 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "T_GRW_PROCESS")
+@SequenceGenerator(name = "SEQ_GRW_PROCESS", sequenceName = "SEQ_GRW_PROCESS", allocationSize = 1)
 public class Process {
     @Column(name = "id_process")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_PROCESS")
     private Long idProcess;
 
     @Column(name = "ds_name")

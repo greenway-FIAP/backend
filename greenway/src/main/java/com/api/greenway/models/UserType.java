@@ -16,10 +16,11 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name = "T_GRW_USER_TYPE")
+@SequenceGenerator(name = "SEQ_GRW_USER_TYPE", sequenceName = "SEQ_GRW_USER_TYPE", allocationSize = 1)
 public class UserType {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GRW_USER_TYPE")
     @Column(name = "id_user_type")
     private Long idUserType;
 
