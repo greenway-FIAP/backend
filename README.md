@@ -37,6 +37,8 @@ As empresas que utilizam a plataforma recebem **certificações automáticas** e
 
 [Link da Apresentação](https://youtu.be/eGrA5A0sdb8)
 
+[Link do Video da Aplicação Java Spring Boot - Funcional](https://youtu.be/Ds23Eab1Z3E)
+
 ## Integrantes
 
 - **RM99513** - Rodrigo Batista Freire - Java Advanced
@@ -167,5 +169,3 @@ As empresas que utilizam a plataforma recebem **certificações automáticas** e
   * DELETE -> `api/companyRepresentative/{id}`
   * GET -> `api/companyRepresentative`
   * POST -> `api/companyRepresentative`
-
- 
