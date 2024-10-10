@@ -3,6 +3,7 @@ package com.api.greenway.services;
 import com.api.greenway.controllers.dtos.ProcessBadgeRegisterDTO;
 import com.api.greenway.controllers.dtos.ProcessBadgeDetailedDTO;
 import com.api.greenway.controllers.dtos.ProcessBadgeUpdateDTO;
+import com.api.greenway.models.Badge;
 import com.api.greenway.models.Process;
 import com.api.greenway.models.ProcessBadge;
 import com.api.greenway.repositories.ProcessBadgeRepository;
@@ -18,10 +19,13 @@ public class ProcessBadgeService {
 
     private final ProcessService processService;
 
+    private final BadgeService badgeService;
+
     @Autowired
-    public ProcessBadgeService(ProcessBadgeRepository processBadgeRepository, ProcessService processService) {
+    public ProcessBadgeService(ProcessBadgeRepository processBadgeRepository, ProcessService processService, BadgeService badgeService) {
         this.processBadgeRepository = processBadgeRepository;
         this.processService = processService;
+        this.badgeService = badgeService;
     }
 
     public ProcessBadge find(Long id) {
@@ -32,8 +36,10 @@ public class ProcessBadgeService {
         ProcessBadge processBadge = new ProcessBadge(processBadgeRegisterDTO);
 
         Process process = processService.find(processBadgeRegisterDTO.idProcess());
+        Badge badge = badgeService.find(processBadgeRegisterDTO.idBadge());
 
         processBadge.setProcess(process);
+        processBadge.setBadge(badge);
 
         return processBadgeRepository.save(processBadge);
     }

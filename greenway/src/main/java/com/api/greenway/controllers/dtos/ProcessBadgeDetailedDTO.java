@@ -9,12 +9,15 @@ public record ProcessBadgeDetailedDTO(
         Long idProcessBadge,
         String urlBadge,
         LocalDateTime dateExpiration,
-        ProcessDetailedDTO process
+        ProcessDetailedDTO process,
+        BadgeDetailedDTO badge
 ) {
 
     public ProcessBadgeDetailedDTO(ProcessBadge processBadge) {
         this(processBadge.getIdProcessBadge() ,processBadge.getUrlBadge(), processBadge.getDateExpiration(),
-                new ProcessDetailedDTO(processBadge.getProcess()));
+                new ProcessDetailedDTO(processBadge.getProcess()),
+                new BadgeDetailedDTO(processBadge.getBadge())
+        );
     }
 
 }

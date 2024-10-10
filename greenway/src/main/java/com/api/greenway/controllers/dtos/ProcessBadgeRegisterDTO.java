@@ -15,7 +15,10 @@ public record ProcessBadgeRegisterDTO(
         LocalDateTime dateExpiration,
 
          @NotNull
-         Long idProcess
+         Long idProcess,
+
+         @NotNull
+         Long idBadge
 
 ) {
 }

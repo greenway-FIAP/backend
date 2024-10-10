@@ -43,6 +43,10 @@ public class ProcessBadge {
     @JoinColumn(name = "id_process")
     private Process process;
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_badge")
+    private Badge badge;
+
     public ProcessBadge(ProcessBadgeRegisterDTO processBadgeRegisterDTO) {
         this.urlBadge = processBadgeRegisterDTO.urlBadge();
         this.dateExpiration =  processBadgeRegisterDTO.dateExpiration();
