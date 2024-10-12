@@ -3,6 +3,7 @@ package com.api.greenway.services;
 import com.api.greenway.controllers.dtos.ProcessStepDetailedDTO;
 import com.api.greenway.controllers.dtos.ProcessStepRegisterDTO;
 import com.api.greenway.controllers.dtos.ProcessStepUpdateDTO;
+import com.api.greenway.models.Measurement;
 import com.api.greenway.models.Process;
 import com.api.greenway.models.ProcessStep;
 import com.api.greenway.models.Step;
@@ -26,6 +27,10 @@ public class ProcessStepService {
         this.processStepRepository = processStepRepository;
         this.processService = processService;
         this.stepService = stepService;
+    }
+
+    public ProcessStep find(Long id) {
+        return processStepRepository.findOneByFinishedAtIsNullAndIdProcessStep(id);
     }
 
     public ProcessStep create(ProcessStepRegisterDTO processStepRegisterDTO) {
