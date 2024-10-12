@@ -1,4 +1,11 @@
 package com.api.greenway.controllers.dtos;
 
-public record MeasurementUpdateDTO() {
+import jakarta.validation.constraints.NotBlank;
+
+public record MeasurementUpdateDTO(
+
+        String name,
+        String description
+
+) {
 }

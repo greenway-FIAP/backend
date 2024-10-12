@@ -4,7 +4,8 @@ import com.api.greenway.models.User;
 
 import java.time.LocalDateTime;
 
-public record UserDetailedDTO(
+public record
+UserDetailedDTO(
 
         Long idUser,
         String email,
