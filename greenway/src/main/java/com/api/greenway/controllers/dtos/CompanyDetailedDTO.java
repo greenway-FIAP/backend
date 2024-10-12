@@ -2,8 +2,6 @@ package com.api.greenway.controllers.dtos;
 
 import com.api.greenway.models.Company;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import org.hibernate.validator.constraints.br.CNPJ;
 
 import java.util.List;
 

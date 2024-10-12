@@ -3,7 +3,6 @@ package com.api.greenway.controllers;
 import com.api.greenway.controllers.dtos.ResourceTypeDetailedDTO;
 import com.api.greenway.controllers.dtos.ResourceTypeRegisterDTO;
 import com.api.greenway.controllers.dtos.ResourceTypeUpdateDTO;
-import com.api.greenway.models.Process;
 import com.api.greenway.models.ResourceType;
 import com.api.greenway.services.ResourceTypeService;
 import jakarta.validation.Valid;

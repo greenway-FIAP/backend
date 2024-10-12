@@ -1,7 +1,5 @@
 package com.api.greenway.models;
 
-import com.api.greenway.controllers.dtos.ProcessRegisterDTO;
-import com.api.greenway.controllers.dtos.ProcessUpdateDTO;
 import com.api.greenway.controllers.dtos.ResourceTypeRegisterDTO;
 import com.api.greenway.controllers.dtos.ResourceTypeUpdateDTO;
 import jakarta.persistence.*;

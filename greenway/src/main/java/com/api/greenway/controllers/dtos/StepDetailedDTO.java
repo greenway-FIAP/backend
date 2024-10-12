@@ -1,7 +1,6 @@
 package com.api.greenway.controllers.dtos;
 
 import com.api.greenway.enums.StatusProcess;
-import com.api.greenway.models.Process;
 import com.api.greenway.models.Step;
 
 import java.time.LocalDateTime;

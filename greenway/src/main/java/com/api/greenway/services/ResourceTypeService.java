@@ -1,7 +1,6 @@
 package com.api.greenway.services;
 
 import com.api.greenway.controllers.dtos.*;
-import com.api.greenway.models.ProductType;
 import com.api.greenway.models.ResourceType;
 import com.api.greenway.repositories.ResourceTypeRepository;
 import org.springframework.beans.factory.annotation.Autowired;

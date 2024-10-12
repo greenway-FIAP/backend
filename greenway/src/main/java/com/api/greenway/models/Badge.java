@@ -2,8 +2,6 @@ package com.api.greenway.models;
 
 import com.api.greenway.controllers.dtos.BadgeRegisterDTO;
 import com.api.greenway.controllers.dtos.BadgeUpdateDTO;
-import com.api.greenway.controllers.dtos.ProcessRegisterDTO;
-import com.api.greenway.controllers.dtos.ProcessUpdateDTO;
 import com.api.greenway.enums.StatusProcess;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

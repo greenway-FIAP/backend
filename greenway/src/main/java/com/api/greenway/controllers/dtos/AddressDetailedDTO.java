@@ -1,7 +1,6 @@
 package com.api.greenway.controllers.dtos;
 
 import com.api.greenway.models.Address;
-import com.api.greenway.models.Company;
 
 public record AddressDetailedDTO(
         Long idAddress,

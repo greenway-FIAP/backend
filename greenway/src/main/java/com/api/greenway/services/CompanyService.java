@@ -2,7 +2,6 @@ package com.api.greenway.services;
 
 import com.api.greenway.controllers.dtos.*;
 import com.api.greenway.models.Company;
-import com.api.greenway.models.Process;
 import com.api.greenway.models.Sector;
 import com.api.greenway.repositories.CompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,8 +2,6 @@ package com.api.greenway.models;
 
 import com.api.greenway.controllers.dtos.MeasurementTypeRegisterDTO;
 import com.api.greenway.controllers.dtos.MeasurementTypeUpdateDTO;
-import com.api.greenway.controllers.dtos.SectorRegisterDTO;
-import com.api.greenway.controllers.dtos.SectorUpdateDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

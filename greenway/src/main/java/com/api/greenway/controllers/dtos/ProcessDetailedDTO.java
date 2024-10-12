@@ -2,8 +2,6 @@ package com.api.greenway.controllers.dtos;
 
 import com.api.greenway.enums.StatusProcess;
 import com.api.greenway.models.Process;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
 import java.util.List;

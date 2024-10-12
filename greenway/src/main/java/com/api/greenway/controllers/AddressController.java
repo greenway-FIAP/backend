@@ -2,7 +2,6 @@ package com.api.greenway.controllers;
 
 import com.api.greenway.controllers.dtos.*;
 import com.api.greenway.models.Address;
-import com.api.greenway.models.Company;
 import com.api.greenway.services.AddressService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

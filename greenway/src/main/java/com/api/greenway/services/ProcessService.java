@@ -3,7 +3,6 @@ package com.api.greenway.services;
 import com.api.greenway.controllers.dtos.*;
 import com.api.greenway.models.Company;
 import com.api.greenway.models.Process;
-import com.api.greenway.models.Product;
 import com.api.greenway.repositories.ProcessRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

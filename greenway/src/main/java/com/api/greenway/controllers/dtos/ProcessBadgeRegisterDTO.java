@@ -1,6 +1,5 @@
 package com.api.greenway.controllers.dtos;
 
-import com.api.greenway.enums.StatusProcess;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 

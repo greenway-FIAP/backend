@@ -1,7 +1,6 @@
 package com.api.greenway.controllers;
 
 import com.api.greenway.controllers.dtos.*;
-import com.api.greenway.models.ProcessResource;
 import com.api.greenway.models.ProcessStep;
 import com.api.greenway.services.ProcessStepService;
 import jakarta.validation.Valid;

@@ -3,7 +3,6 @@ package com.api.greenway.controllers.dtos;
 import com.api.greenway.models.Product;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 public record ProductDetailedDTO(
         Long idProduct,

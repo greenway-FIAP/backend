@@ -1,7 +1,5 @@
 package com.api.greenway.models;
 
-import com.api.greenway.controllers.dtos.ImprovementMeasurementRegisterDTO;
-import com.api.greenway.controllers.dtos.ImprovementMeasurementUpdateDTO;
 import com.api.greenway.controllers.dtos.MeasurementProcessStepRegisterDTO;
 import com.api.greenway.controllers.dtos.MeasurementProcessStepUpdateDTO;
 import jakarta.persistence.*;

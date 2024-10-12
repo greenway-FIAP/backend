@@ -1,7 +1,6 @@
 package com.api.greenway.controllers;
 
 import com.api.greenway.controllers.dtos.ResourceDetailedDTO;
-import com.api.greenway.controllers.dtos.ProductUpdateDTO;
 import com.api.greenway.controllers.dtos.ResourceRegisterDTO;
 import com.api.greenway.controllers.dtos.ResourceUpdateDTO;
 import com.api.greenway.models.Resource;

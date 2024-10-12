@@ -3,7 +3,6 @@ package com.api.greenway.controllers;
 import com.api.greenway.controllers.dtos.ProcessResourceRegisterDTO;
 import com.api.greenway.controllers.dtos.ProcessResourceDetailedDTO;
 import com.api.greenway.controllers.dtos.ProcessResourceUpdateDTO;
-import com.api.greenway.controllers.dtos.ProductUpdateDTO;
 import com.api.greenway.models.ProcessResource;
 import com.api.greenway.services.ProcessResourceService;
 import jakarta.validation.Valid;
