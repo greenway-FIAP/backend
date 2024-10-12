@@ -2,10 +2,9 @@ package com.api.greenway.services;
 
 import com.api.greenway.controllers.dtos.*;
 import com.api.greenway.models.ImprovementMeasurement;
-import com.api.greenway.models.SustainableGoal;
+import com.api.greenway.models.Measurement;
 import com.api.greenway.models.SustainableImprovementActions;
 import com.api.greenway.repositories.ImprovementMeasurementRepository;
-import com.api.greenway.repositories.SustainableImprovementActionsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,10 +17,14 @@ public class ImprovementMeasurementService {
 
     private final SustainableImprovementActionsService sustainableImprovementActionsService;
 
+    private final MeasurementService measurementService;
+
     @Autowired
-    public ImprovementMeasurementService(ImprovementMeasurementRepository improvementMeasurementRepository, SustainableImprovementActionsService sustainableImprovementActionsService) {
+    public ImprovementMeasurementService(ImprovementMeasurementRepository improvementMeasurementRepository,
+                                         SustainableImprovementActionsService sustainableImprovementActionsService, MeasurementService measurementService) {
         this.improvementMeasurementRepository = improvementMeasurementRepository;
         this.sustainableImprovementActionsService = sustainableImprovementActionsService;
+        this.measurementService = measurementService;
     }
 
     public ImprovementMeasurement find(Long id) {
@@ -29,13 +32,15 @@ public class ImprovementMeasurementService {
     }
 
     public ImprovementMeasurement create(ImprovementMeasurementRegisterDTO improvementMeasurementRegisterDTO) {
-        ImprovementMeasurement improvementActions = new ImprovementMeasurement(improvementMeasurementRegisterDTO);
+        ImprovementMeasurement improvementMeasurement = new ImprovementMeasurement(improvementMeasurementRegisterDTO);
 
         SustainableImprovementActions sustainableImprovementActions = sustainableImprovementActionsService.find(improvementMeasurementRegisterDTO.idSustainableImprovementActions());
+        Measurement measurement = measurementService.find(improvementMeasurementRegisterDTO.idMeasurement());
 
-        improvementActions.setSustainableImprovementActions(sustainableImprovementActions);
+        improvementMeasurement.setSustainableImprovementActions(sustainableImprovementActions);
+        improvementMeasurement.setMeasurement(measurement);
 
-        return improvementMeasurementRepository.save(improvementActions);
+        return improvementMeasurementRepository.save(improvementMeasurement);
     }
 
     public Page<ImprovementMeasurementDetailedDTO> list(Pageable pagination) {

@@ -28,6 +28,10 @@ public class ImprovementMeasurement {
     @JoinColumn(name = "id_sustainable_improvement_actions")
     private SustainableImprovementActions sustainableImprovementActions;
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_measurement")
+    private Measurement measurement;
+
     @Column(name = "dt_created_at")
     private LocalDateTime createdAt;
 

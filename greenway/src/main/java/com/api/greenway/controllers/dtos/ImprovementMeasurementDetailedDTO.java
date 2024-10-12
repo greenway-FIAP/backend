@@ -6,14 +6,17 @@ public record ImprovementMeasurementDetailedDTO(
 
         Long idImprovementMeasurement,
 
-        SustainableImprovementActionsDetailedDTO sustainableImprovementActions
+        SustainableImprovementActionsDetailedDTO sustainableImprovementActions,
+
+        MeasurementDetailedDTO measurement
 
 ) {
 
     public ImprovementMeasurementDetailedDTO (ImprovementMeasurement improvementMeasurement){
         this(
              improvementMeasurement.getIdImprovementMeasurement(),
-             new SustainableImprovementActionsDetailedDTO(improvementMeasurement.getSustainableImprovementActions())
+             new SustainableImprovementActionsDetailedDTO(improvementMeasurement.getSustainableImprovementActions()),
+                new MeasurementDetailedDTO(improvementMeasurement.getMeasurement())
         );
     }
 
