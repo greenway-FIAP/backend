@@ -6,6 +6,7 @@ import com.api.greenway.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,11 +14,13 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final UserTypeService userTypeService;
+    private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserService(UserRepository userRepository, UserTypeService userTypeService) {
+    public UserService(UserRepository userRepository, UserTypeService userTypeService, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.userTypeService = userTypeService;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public User find(Long id) {
@@ -26,9 +29,8 @@ public class UserService {
 
     public User create(UserRegisterDTO userRegisterDTO) {
         User user = new User(userRegisterDTO);
-
         UserType userType = userTypeService.find(userRegisterDTO.idUserType());
-
+        user.setPassword(passwordEncoder.encode(userRegisterDTO.password()));
         user.setUserType(userType);
 
         return userRepository.save(user);
@@ -55,6 +57,11 @@ public class UserService {
 
         user.updateInformation(userUpdateDTO);
 
+        if (userUpdateDTO.password() != null &&
+                !passwordEncoder.matches(userUpdateDTO.password(), user.getPassword())) {
+
+            user.setPassword(passwordEncoder.encode(userUpdateDTO.password()));
+        }
         userRepository.save(user);
 
         return new UserDetailedDTO(user);
