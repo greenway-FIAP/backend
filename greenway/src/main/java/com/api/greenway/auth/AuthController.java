@@ -2,11 +2,12 @@ package com.api.greenway.auth;
 
 import com.api.greenway.repositories.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class AuthController {
 
     private final UserRepository userRepository;
@@ -18,6 +19,12 @@ public class AuthController {
         this.passwordEncoder = passwordEncoder;
         this.tokenService = tokenService;
     }
+
+    @GetMapping("/login")
+    public String login() { return "login"; }
+
+    @GetMapping("/logout")
+    public String logout() { return "logout"; }
 
     @PostMapping("/login")
     public Token login(@RequestBody Credentials credentials) {

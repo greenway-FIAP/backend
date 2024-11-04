@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Epic Task</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="container is-flex is-flex-direction-column is-align-items-center p-6">
+
+<h1 class="title is-1">Greenway</h1>
+
+<h2 class="title">Acessar Sistema</h2>
+
+<form action="/login" method="post" class="box" style="width: 100%; max-width: 400px;">
+    <div class="field">
+        <label class="label" for="email">E-mail</label>
+        <div class="control">
+            <input class="input" type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label" for="password">Senha</label>
+        <div class="control">
+            <input class="input" type="password" id="password" name="password" required placeholder="Digite sua senha">
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <button type="submit" class="button is-link is-fullwidth">Acessar</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
