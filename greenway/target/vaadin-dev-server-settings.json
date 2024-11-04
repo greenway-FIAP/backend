@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/MarceloAmp/Documents/FIAP/Technos/Challenge/Sprint 4/backend/greenway/./src/main/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/MarceloAmp/Documents/FIAP/Technos/Challenge/Sprint 4/backend/greenway/./src/main/frontend/generated/jar-resources",
+  "staticOutput": "C:/Users/MarceloAmp/Documents/FIAP/Technos/Challenge/Sprint 4/backend/greenway/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\backend\\greenway\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\backend\\greenway\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Users/MarceloAmp/Documents/FIAP/Technos/Challenge/Sprint 4/backend/greenway/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/MarceloAmp/Documents/FIAP/Technos/Challenge/Sprint 4/backend/greenway/target/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/MarceloAmp/Documents/FIAP/Technos/Challenge/Sprint 4/backend/greenway/./src/main/frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\backend\\greenway\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
